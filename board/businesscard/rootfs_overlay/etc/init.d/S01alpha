@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# make root folder RW
+mount -o remount,rw /
