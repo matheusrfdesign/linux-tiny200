@@ -1,1 +1,1 @@
-include $(sort $(wildcard $(BR2_EXTERNAL_BUSINESSCARD_PATH)/package/*/*.mk))
+include $(sort $(wildcard $(BR2_EXTERNAL_USBKEYRING_PATH)/package/*/*.mk))
