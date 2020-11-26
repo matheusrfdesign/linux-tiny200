@@ -8,3 +8,7 @@ cp ${STAGING_DIR}/usr/sbin/dhcpd ${TARGET_DIR}/usr/sbin/
 cp ${STAGING_DIR}/usr/lib/libdhcp.so.0 ${TARGET_DIR}/usr/lib/
 cp ${STAGING_DIR}/usr/lib/libomapi.so.0 ${TARGET_DIR}/usr/lib/
 cp ${STAGING_DIR}/usr/lib/libdhcpctl.so.0 ${TARGET_DIR}/usr/lib/
+
+# Create a random seed for each build
+umask 077
+dd if=/dev/urandom of=${TARGET_DIR}/etc/random-seed count=1
